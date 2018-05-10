@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+	int entero = 5;
+	tamano(entero);
+
+
+}
+
+void tamano(int  entero){
+	printf("%d", sizeof(entero));
+
+
+}

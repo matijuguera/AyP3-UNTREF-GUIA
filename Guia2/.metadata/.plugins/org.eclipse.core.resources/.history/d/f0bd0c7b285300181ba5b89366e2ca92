@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+
+
+int main()
+{
+    int array[] = { 1,2,3,4,5,6,7,8 };
+
+    f(array);
+    g(array);
+
+
+}
+
+void f(int param[]) {
+    printf("sizeof(param): %d\n", sizeof(param) );
+    param[3] = 6;
+};
+
+void g(int* param) {
+    printf("sizeof(param): %d\n", sizeof(param) );
+    param[6] = 6;
+};
+
+void imprimirArray(int* array, unsigned tam){
+	for(int i=0;i<tam;i++){
+		printf("%d \n", array++);
+	}
+}
+
+//1) 8 | 8
+//2) por que

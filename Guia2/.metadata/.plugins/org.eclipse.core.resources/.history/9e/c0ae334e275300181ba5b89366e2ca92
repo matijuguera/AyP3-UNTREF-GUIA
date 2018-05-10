@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+
+int main()
+{
+    int array[] = { 1,2,3,4,5,6,7,8 };
+
+    f(array);
+    g(array);
+
+    // Imprimir
+}
+
+void f(int param[]) {
+    printf("sizeof(param): %d\n", sizeof(param) );
+    param[3] = 6;
+};
+
+void g(int* param) {
+    printf("sizeof(param): %d\n", sizeof(param) );
+    param[6] = 6;
+};
+

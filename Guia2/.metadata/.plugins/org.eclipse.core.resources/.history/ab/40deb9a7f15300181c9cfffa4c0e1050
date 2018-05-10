@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+#define TAMANO_DESTINO  8 /* modificar de ser necesario */
+int main()
+{
+    int origen[] = { 1,2,3,4,5,6,7,8 };
+    int destino[TAMANO_DESTINO];
+    int origenf[] = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8 };
+    int destinof[TAMANO_DESTINO];
+
+    copiar_enteros(destino, origen, TAMANO_DESTINO);
+    copiar_flotantes(destinof, origenf, TAMANO_DESTINO);
+}
+
+void copiar_enteros(int *destino, int*origen,int tamano_destino){
+	for(int i=0;i<tamano_destino;i++){
+		destino = origen;
+		printf("%d\n",*destino);
+		destino++;
+		origen++;
+	}
+}

@@ -1,0 +1,8 @@
+    int main()
+    {
+        int vector[] = { 0x1, 0x2, 0x3 };
+
+        printf("%p", vector-1);
+    }
+
+//1) es la posicion de memoria que le sigue a 0x1

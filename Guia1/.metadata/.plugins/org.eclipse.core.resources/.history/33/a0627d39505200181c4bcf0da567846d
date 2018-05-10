@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(int argc, char** argv) {
+	float auro = 1.6180;
+	int primo = 999631;
+	float* pf;
+	int* pi;
+
+	primo = auro;
+
+	void* pv = 0x0; //1)Es un puntero correcto ya que almacenan: -Valido -Invalido - NULO
+	pf = &auro;
+	pi = &primo;
+
+	printf("%d", *pi);
+	pv = pf;
+	pv = pi;
+}
+//2) Los punteros contienen posiciones de memorias que al desreferenciarnos nos va a dar el valor que tiene almacenada esa posicion
+//3) PV contiene una posicion de memoria nula, no es posible desreferenciarla ya que al no tener posicion asignada no va a contener valor.
+//4) En la linea 13 PV es un puntero almacena la misma posicion de memoria que pf, pero no se puede desreferenciar por que es un puntero a void
+//5) En la linea 14 Lo mismo que arriba pero contiene a la pos de pi.
+//6) Se puede asignar pero ahora primo vale 1 y pi desreferenciado va a valer 1
+//7) Ahora auro vale 999631 y pf desreferenciado va a valer 999631.

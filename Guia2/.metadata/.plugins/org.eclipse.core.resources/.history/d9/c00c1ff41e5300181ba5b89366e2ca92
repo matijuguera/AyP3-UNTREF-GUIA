@@ -1,0 +1,6 @@
+    int main()
+    {
+        int vector[] = { 0x1, 0x2, 0x3 };
+
+        printf("%d", *vector+1);
+    }

@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main(int argc, char** argv) {
+	int enteros[] = { 1, 2, 3, 4, 7, 78, 174 };
+	int simple = 32;
+	int radio = 4;
+	int* p;
+	int* q;
+	int* r;
+
+	printf("p: %p", p);
+
+	p = enteros + 6;
+	q = &simple;
+	r = q;
+
+
+
+	*r = 115;
+
+	r = &radio;
+
+	*p = radio;
+
+	p = r;
+	q = enteros;
+
+	*(q + 4) = 0;
+	*p = 0;
+
+	r = q + 1;
+
+	q - r;
+
+	p = enteros + 3;
+
+	q - p;
+	return 0;
+
+}
+
+//2)
+//3) El valor de p = la posicion de memoria donde se encuentra 174 (entero[6]), q es la posicion de memoria de simple, r va a valer lo mismo que simple ya que le asignamos q que tiene como valor la posicion de simple
+

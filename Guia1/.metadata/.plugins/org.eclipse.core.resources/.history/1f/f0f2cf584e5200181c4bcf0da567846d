@@ -1,0 +1,14 @@
+int main() {
+	float auro = 1.6180;
+	int primo = 999631;
+	float* pf;
+	int* pi;
+
+	void* pv = 0x0; //puntero con posicion de memoria nula
+
+	pf = &auro;
+	pi = &primo;
+
+	pv = pf;
+	pv = pi;
+}

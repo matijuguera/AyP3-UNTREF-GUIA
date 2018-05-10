@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    float origen[] = { 1.1, 2.2, 3.3 };
+    float destino[24];
+
+    printf("%d", sizeof(destino));
+
+    return 0;
+}
+
+void cambioDeArray(){
+
+}

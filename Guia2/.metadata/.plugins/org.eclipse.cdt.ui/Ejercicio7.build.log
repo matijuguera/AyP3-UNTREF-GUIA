@@ -1,0 +1,35 @@
+22:42:17 **** Incremental Build of configuration Debug for project Ejercicio7 ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12:5: warning: implicit declaration of function 'copiar_enteros' [-Wimplicit-function-declaration]
+     copiar_enteros(destino, origen, TAMANO_DESTINO);
+     ^~~~~~~~~~~~~~
+../main.c:13:5: warning: implicit declaration of function 'copiar_flotantes' [-Wimplicit-function-declaration]
+     copiar_flotantes(destinof, origenf, TAMANO_DESTINO);
+     ^~~~~~~~~~~~~~~~
+../main.c: At top level:
+../main.c:16:6: warning: conflicting types for 'copiar_enteros'
+ void copiar_enteros(int *destino, int*origen,int tamano_destino){
+      ^~~~~~~~~~~~~~
+../main.c:12:5: note: previous implicit declaration of 'copiar_enteros' was here
+     copiar_enteros(destino, origen, TAMANO_DESTINO);
+     ^~~~~~~~~~~~~~
+../main.c:25:6: warning: conflicting types for 'copiar_flotantes'
+ void copiar_flotantes(float *destinof, float* origenf,int tamano_destino){
+      ^~~~~~~~~~~~~~~~
+../main.c:13:5: note: previous implicit declaration of 'copiar_flotantes' was here
+     copiar_flotantes(destinof, origenf, TAMANO_DESTINO);
+     ^~~~~~~~~~~~~~~~
+Finished building: ../main.c
+ 
+Building target: Ejercicio7.exe
+Invoking: Cygwin C Linker
+gcc  -o "Ejercicio7.exe"  ./main.o   
+Finished building target: Ejercicio7.exe
+ 
+
+22:42:17 Build Finished (took 468ms)
+

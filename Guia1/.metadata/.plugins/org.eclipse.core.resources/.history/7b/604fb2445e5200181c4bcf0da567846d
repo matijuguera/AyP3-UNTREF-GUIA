@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(int argc, char** argv) {
+	int enteros[] = {1,3,5};
+	unsigned sinSigno[] = {6,5,7};
+	double dobles[] = {1.5 , 3.3, 5.60};
+
+	imprimir(enteros,sizeof(int));
+
+	return 0;
+
+}
+
+void imprimir(int* array, int tamano_tipo){
+	printf("%d", sizeof(array));
+}

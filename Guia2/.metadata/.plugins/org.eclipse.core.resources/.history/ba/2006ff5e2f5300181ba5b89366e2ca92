@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+	int entero = 5;
+	tamaño(entero);
+
+
+}
+
+void tamaño(int * entero){
+	printf("%d", sizeof(entero));
+
+
+}

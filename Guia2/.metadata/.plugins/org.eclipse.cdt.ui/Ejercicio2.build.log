@@ -1,0 +1,24 @@
+21:25:58 **** Incremental Build of configuration Debug for project Ejercicio2 ****
+make all 
+Building file: ../main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:4:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("vector[0]=%p vector[1]=%p vector[2]=%p", &vector[0], &vector[1], &vector[2]);
+         ^~~~~~
+../main.c:4:9: warning: incompatible implicit declaration of built-in function 'printf'
+../main.c:4:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../main.c:5:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long int' [-Wformat=]
+         printf("\n %d", (&vector[2] - &vector[0]));
+                     ^
+Finished building: ../main.c
+ 
+Building target: Ejercicio2.exe
+Invoking: Cygwin C Linker
+gcc  -o "Ejercicio2.exe"  ./main.o   
+Finished building target: Ejercicio2.exe
+ 
+
+21:25:58 Build Finished (took 416ms)
+

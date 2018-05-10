@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(int argc, char** argv) {
+	int enteros[] = {100,3,5};
+	unsigned sinSigno[] = {6,5,7};
+	double dobles[] = {1.5 , 3.3, 5.60};
+
+
+	printf("/d", sizeof(100));
+	imprimir(enteros,sizeof(enteros),sizeof(int));
+
+	return 0;
+
+}
+
+void imprimir(char* array, int tamano_total,int tamano_tipo){
+	int elementos = (tamano_total/tamano_tipo);
+	for(int i=0;i<elementos;i++){
+		printf("%d \n",*(array));
+		array+=sizeof(tamano_tipo);
+	}
+}

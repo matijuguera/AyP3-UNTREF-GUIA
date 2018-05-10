@@ -1,0 +1,9 @@
+int main() {
+	int i = 29;
+	int j = 50;
+
+	char vector[] = { 0x1, 0x2, 0x3 };
+
+	print("%p", &i);
+}
+

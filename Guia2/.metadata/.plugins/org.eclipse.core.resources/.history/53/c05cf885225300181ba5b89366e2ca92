@@ -1,0 +1,15 @@
+int main()
+{
+    double decimales[] = { 1.1, 2.2, 3.3 };
+    int enteros[] = { 2, 8, 16, 32, 64};
+
+    printf("sizeof(decimales): %d\n", sizeof(decimales));
+    printf("sizeof(enteros): %d\n", sizeof(enteros));
+
+    printf("sizeof(double): %d\n", sizeof(double));
+    printf("sizeof(int): %d\n", sizeof(int));
+
+    return 0;
+}
+
+//1) 8bytesx3elementos = 24   | 4bytesx5elementos = 20 | 8 | 4
