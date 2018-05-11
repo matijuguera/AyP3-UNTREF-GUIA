@@ -1,21 +1,10 @@
-23:21:39 **** Incremental Build of configuration Debug for project pruebas ****
+14:22:06 **** Incremental Build of configuration Debug for project pruebas ****
 make all 
 Building file: ../main.c
 Invoking: Cygwin C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
-../main.c: In function 'main':
-../main.c:5:2: warning: implicit declaration of function 'tamano' [-Wimplicit-function-declaration]
-  tamano(entero);
-  ^~~~~~
-../main.c: At top level:
-../main.c:10:6: warning: conflicting types for 'tamano'
- void tamano(int  entero){
-      ^~~~~~
-../main.c:5:2: note: previous implicit declaration of 'tamano' was here
-  tamano(entero);
-  ^~~~~~
 ../main.c: In function 'tamano':
-../main.c:11:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+../main.c:16:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
   printf("%d", sizeof(entero));
            ^
 Finished building: ../main.c
@@ -26,5 +15,5 @@ gcc  -o "pruebas.exe"  ./main.o
 Finished building target: pruebas.exe
  
 
-23:21:39 Build Finished (took 316ms)
+14:22:06 Build Finished (took 422ms)
 

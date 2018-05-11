@@ -12,7 +12,7 @@ int main(){
 }
 
 int indice_donde_se_encuentra_numero(int* origen, int numero_a_buscar,int numero_elementos){
-	int* ultima_posicion = origen+numero_elementos-1;
+
 	int indice = INDICE_NO_ENCONTRADO;
 	int i = 0;
 	while(indice==INDICE_NO_ENCONTRADO && i < numero_elementos){
